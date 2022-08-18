@@ -3,6 +3,61 @@ html
   body 
     include html/header
     main
+      //TECHNOLOGY
+      section.techno
+        .container
+          .techno-content
+            .techno-top
+              h2.title OUR TECHNOLOGIES
+              button.btn-arrow.techno-top__btn
+                svg.techno-top__svg(width="125" height="125")
+                 use(href="")
+            ul.techno-list
+              li.techno-list__item.current-line
+                label.techno-list__label(for="radio1")
+                  input.techno-list__input(type="radio" name="radio-btn" id="radio1")
+                  span.techno-list__text RILLCUY
+              li.techno-list__item
+                label.techno-list__label(for="radio2")
+                  input.techno-list__input(type="radio" name="radio-btn" id="radio2")
+                  span.techno-list__text TRUKAHH
+              li.techno-list__item
+                label.techno-list__label(for="radio3")
+                  input.techno-list__input(type="radio" name="radio-btn" id="radio3")
+                  span.techno-list__text ASELII
+              li.techno-list__item
+                label.techno-list__label(for="radio4")
+                  input.techno-list__input(type="radio" name="radio-btn" id="radio4")
+                  span.techno-list__text KOCKGMG
+              li.techno-list__item
+                label.techno-list__label(for="radio5")
+                  input.techno-list__input(type="radio" name="radio-btn" id="radio5")
+                  span.techno-list__text MDITURU
+            .techno-bottom
+              .techno-bottom__left
+                h3.techno-bottom__title RILLCUY <span class="techno-bottom__title--span">AI.</span>
+                p.techno-bottom__text Annotate large volumes of 3D sensor, image, and video data at high throughput. ML-powered pre-labeling and an automated quality assurance system ensure high quality annotations.
+                ul.techno-bottom-list
+                  li.techno-bottom-list__item
+                    .techno-bottom-list__left
+                      svg.techno-bottom-list__svg(width="24" height="24")
+                        use(href="")
+                    p.techno-bottom-list__text Manage Your Datasets
+                  li.techno-bottom-list__item
+                    .techno-bottom-list__left
+                      svg.techno-bottom-list__svg(width="24" height="24")
+                        use(href="")
+                    p.techno-bottom-list__text Automate Document Processing
+                  li.techno-bottom-list__item
+                    .techno-bottom-list__left
+                      svg.techno-bottom-list__svg(width="24" height="24")
+                        use(href="")
+                    p.techno-bottom-list__text Scale Advanced Annotations
+                button.btn.techno-bottom-list__btn
+                  span.techno-bottom-list__span LEARN MORE
+                  span.techno-bottom-list__svg
+                    svg(width="32" height="32")
+              img.techno-bottom__img(src="img/techno-circle.png", alt="img")
       //DEVELOP
       section.develop
         .container
