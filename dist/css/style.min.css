@@ -362,6 +362,15 @@ body {
   color: #ffffff;
 }
 
+.btn-arrow {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
 .header {
   padding-top: 48px;
 }
@@ -398,6 +407,83 @@ body {
   transform-origin: bottom left;
 }
 
+.develop {
+  padding-bottom: 180px;
+}
+.develop__title {
+  margin-bottom: 94px;
+}
+
+.develop-content {
+  display: flex;
+  justify-content: center;
+  gap: 264px;
+}
+.develop-content__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(420%, -50%);
+  width: 82px;
+  height: 82px;
+  background-color: #ffffff;
+}
+
+.develop-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 508px;
+}
+.develop-list--after::after {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  left: 50%;
+  width: 570px;
+  height: 1px;
+  transform: rotate(90deg);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.develop-list--before::before {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  right: 50%;
+  width: 570px;
+  height: 1px;
+  transform: rotate(90deg);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.develop-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 508px;
+}
+.develop-list__img {
+  width: 160px;
+}
+.develop-list__content {
+  max-width: 316px;
+}
+.develop-list__name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.develop-list__info {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .we-support {
   padding-bottom: 180px;
 }
@@ -414,12 +500,6 @@ body {
 .we-support-content__btn {
   width: 120px;
   height: 120px;
-  cursor: pointer;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
 }
 .we-support-content__btn--right {
   background-color: #ffffff;

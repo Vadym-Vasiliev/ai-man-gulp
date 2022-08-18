@@ -17,13 +17,6 @@
   &__btn {
     width: 120px;
     height: 120px;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: transparent;
 
     &--right {
       background-color: $white;
