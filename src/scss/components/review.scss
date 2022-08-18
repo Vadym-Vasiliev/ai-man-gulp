@@ -1,0 +1,65 @@
+.review {
+  padding-bottom: 180px;
+}
+
+.review-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.review-top {
+  margin-bottom: 73px;
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 2;
+
+    color: $white-opacity;
+
+    &--span {
+      color: $white;
+    }
+  }
+}
+
+.review-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  max-width: 695px;
+  margin: 0 auto;
+
+  &__btn {
+    position: absolute;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 2;
+
+    background: $before-line;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__span {
+    width: 64px;
+    border: 2px solid $white;
+  }
+
+  &__info {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: -0.03em;
+
+    color: $white;
+  }
+}

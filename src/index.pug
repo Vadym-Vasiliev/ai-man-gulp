@@ -3,7 +3,24 @@ html
   body 
     include html/header
     main
-      //HERO
+      //REVIEW
+      section.review
+        .container
+          .review-content
+            .review-top
+              h2.title.review-top__title WHAT THEY SAY
+              p.review-top__text <span class="review-top__text--span">It was easy to get started with AI-MAN</span> because they had the platform and the people with the skillset to perform the annotation tasks we needed.
+            .review-bottom
+              //- button.review-bottom__btn
+              //-   svg.review-bottom__svg(width="100" height="100")
+              //-     use(href="")
+              p.review-bottom__name Anakin Dripwalker
+              span.review-bottom__span
+              p.review-bottom__info Chief Data Scient, AI Order
+              //- button.review-bottom__btn
+              //-   svg.review-bottom__svg(width="100" height="100")
+              //-     use(href="")
+      //SUPPORT
       section.support
         .container
           .support-content
@@ -48,7 +65,8 @@ html
                 //- li.support-list__item
                 //-   a.support-list__link(href="#")
                 //-     img.support-list__img(src="img/support12.png", alt="support") 
-              
+ 
+
     include html/footer
     script(src="js/app.min.js")
 
