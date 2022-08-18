@@ -3,6 +3,47 @@ html
   body 
     include html/header
     main
+      //WE_SUPPORT
+      section.we-support
+        .container
+          .we-support-content
+            .we-support-content__top
+              h2.title THINGS WE SUPPORT
+              .we-support-content__btns
+                button.we-support-content__btn(type="button")
+                  svg.we-support-content__svg.we-support-content__svg--left(width="75" height="75")
+                    use(href="")
+                button.we-support-content__btn.we-support-content__btn--right(type="button")
+                  svg.we-support-content__svg.we-support-content__svg--right(width="75" height="75")
+                    use(href="")  
+            ul.we-support-list
+              li.we-support-list__item
+                a.we-support-list__link(href="#")
+                img.we-support-list__img(src="img/we-support-1.jpg", alt="img")
+                .we-support-list__content
+                  p.we-support-list__text RETAIL AND THE E - COMMERCE
+              li.we-support-list__item
+                a.we-support-list__link(href="#")
+                img.we-support-list__img(src="img/we-support-2.jpg", alt="img")
+                .we-support-list__content
+                  p.we-support-list__text AI FOR THE CONVERSATION
+              li.we-support-list__item
+                a.we-support-list__link(href="#")
+                img.we-support-list__img(src="img/we-support-3.jpg", alt="img")
+                .we-support-list__content
+                  p.we-support-list__text PERSONALIZE AND RELEVANCE
+              li.we-support-list__item
+                a.we-support-list__link(href="#")
+                img.we-support-list__img(src="img/we-support-4.jpg", alt="img")
+                .we-support-list__content
+                  p.we-support-list__text AUGMENTED AND VIRTUAL REALITY
+              //- li.we-support-list__item
+              //-   a.we-support-list__link(href="#")
+              //-   img.we-support-list__img(src="img/we-support-5.jpg", alt="img")
+              //-   .we-support-list__content
+              //-     p.we-support-list__text AUTOMATIC FOR VEHICLES
+                  
+
       //REVIEW
       section.review
         .container
@@ -20,51 +61,62 @@ html
               //- button.review-bottom__btn
               //-   svg.review-bottom__svg(width="100" height="100")
               //-     use(href="")
-      //SUPPORT
-      section.support
+      //OUR_SUPPORT
+      section.our-support
         .container
-          .support-content
-            h2.title.support-content__title SUPPORTED BY
-            .support-top
-               ul.support-list
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support1.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support2.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support3.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support4.png", alt="support") 
-                //- li.support-list__item
-                //-   a.support-list__link(href="#")
-                //-     img.support-list__img(src="img/support5.png", alt="support") 
-                //- li.support-list__item
-                //-   a.support-list__link(href="#")
-                //-     img.support-list__img(src="img/support6.png", alt="support") 
-            .support-bottom
-              ul.support-list
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support7.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support8.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support9.png", alt="support") 
-                li.support-list__item
-                  a.support-list__link(href="#")
-                    img.support-list__img(src="img/support10.png", alt="support") 
-                //- li.support-list__item
-                //-   a.support-list__link(href="#")
-                //-     img.support-list__img(src="img/support11.png", alt="support") 
-                //- li.support-list__item
-                //-   a.support-list__link(href="#")
-                //-     img.support-list__img(src="img/support12.png", alt="support") 
+            h2.title.our-support__title SUPPORTED BY
+            .our-support-top
+               ul.our-support-list
+                li.our-support-list__item
+                  a.our-support-list__link(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                //- li.our-support-list__item
+                //-   a.our-support-list__link(href="#")
+                //-     svg.our-support-list__svg
+                          use(href="") 
+                //- li.our-support-list__item
+                //-   a.our-support-list__link(href="#")
+                //-     svg.our-support-list__svg
+                          use(href="") 
+            .our-support-bottom
+              ul.our-support-list
+                li.our-support-list__item
+                  a.our-support-list__link.our-support-list__link--shadow(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link.our-support-list__link--shadow(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link.our-support-list__link--shadow(href="#")
+                    svg.our-support-list__svg
+                      use(href="") 
+                li.our-support-list__item
+                  a.our-support-list__link.our-support-list__link--shadow(href="#")
+                    svg.our-support-list__svg
+                      use(href="")
+                //- li.our-support-list__item
+                //-   a.our-support-list__link.our-support-list__link--shadow(href="#")
+                //-     svg.our-support-list__svg
+                          use(href="")
+                //- li.our-support-list__item
+                //-   a.our-support-list__link.our-support-list__link--shadow(href="#")
+                //-     svg.our-support-list__svg
+                          use(href="")
  
 
     include html/footer

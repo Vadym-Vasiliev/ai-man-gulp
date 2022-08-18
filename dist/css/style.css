@@ -398,6 +398,52 @@ body {
   transform-origin: bottom left;
 }
 
+.we-support {
+  padding-bottom: 180px;
+}
+
+.we-support-content__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 99px;
+}
+.we-support-content__btns {
+  display: flex;
+  margin-left: auto;
+}
+.we-support-content__btn {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.we-support-content__btn--right {
+  background-color: #ffffff;
+}
+
+.we-support-list {
+  display: flex;
+  align-items: center;
+}
+.we-support-list__img {
+  width: 320px;
+}
+.we-support-list__content {
+  margin-top: 36px;
+}
+.we-support-list__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  min-width: 312px;
+  color: #ffffff;
+}
+
 .review {
   padding-bottom: 180px;
 }
@@ -455,37 +501,54 @@ body {
   color: #ffffff;
 }
 
-.support {
+.our-support {
   padding-bottom: 180px;
 }
-
-.support-content__title {
+.our-support__title {
   text-align: center;
   margin-bottom: 90px;
 }
 
-.support-top {
+.our-support-top {
   margin-bottom: 84px;
 }
 
-.support-list {
+.our-support-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 48px;
 }
-.support-list__item {
-  max-width: 240px;
-}
-.support-list__link {
-  transform: scale(0);
+.our-support-list__item {
+  position: relative;
+  width: 240px;
+  height: 100px;
+  transform: scale(1);
   transition: transform 250ms linear;
 }
-.support-list__link:hover, .support-list__link:focus {
-  transform: scale(1.2);
+.our-support-list__item:hover, .our-support-list__item:focus {
+  transform: scale(1.05);
 }
-.support-list__img {
+.our-support-list__link {
+  position: absolute;
+  top: 0;
   width: 240px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+  border-radius: 32px;
+  border: 1px solid #ccc;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.our-support-list__link--shadow {
+  top: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.our-support-list__svg {
+  width: 240px;
+  height: 100px;
 }
 
 .footer {

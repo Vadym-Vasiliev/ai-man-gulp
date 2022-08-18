@@ -1,0 +1,55 @@
+.we-support {
+  padding-bottom: 180px;
+}
+
+.we-support-content {
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 99px;
+  }
+
+  &__btns {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__btn {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+
+    &--right {
+      background-color: $white;
+    }
+  }
+}
+
+.we-support-list {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 320px;
+  }
+
+  &__content {
+    margin-top: 36px;
+  }
+
+  &__text {
+    font-family: $font-raleway;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+    min-width: 312px;
+
+    color: $white;
+  }
+}
