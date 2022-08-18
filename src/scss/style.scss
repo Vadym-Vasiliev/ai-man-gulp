@@ -1,9 +1,10 @@
-@import "fonts";
+@import "./base/normalize";
+@import "./utils/reset";
+@import "./utils/vars";
+@import "./utils/mixin";
+@import "./components/general";
 
-body {
-  font-family: Montserrat-Ace;
-  background-color: skyblue;
-  p {
-    color: black;
-  }
-}
+@import "./components/header";
+
+@import "./components/supported";
+@import "./components/footer";
