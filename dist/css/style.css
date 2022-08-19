@@ -919,9 +919,20 @@ body.modal-open {
 .our-support {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 767px) {
+  .our-support {
+    padding-bottom: 100px;
+  }
+}
 .our-support__title {
   text-align: center;
   margin-bottom: 90px;
+}
+@media screen and (max-width: 767px) {
+  .our-support__title {
+    margin-bottom: 60px;
+    font-size: 59px;
+  }
 }
 
 .our-support-top {
@@ -933,6 +944,21 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   gap: 48px;
+}
+@media screen and (min-width: 992px) and (max-width: 1309px) {
+  .our-support-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .our-support-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-support-list {
+    flex-wrap: wrap;
+  }
 }
 .our-support-list__item {
   position: relative;
