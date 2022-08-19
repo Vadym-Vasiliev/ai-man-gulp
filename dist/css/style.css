@@ -278,7 +278,7 @@ img {
 
 body {
   font-family: "Plus Jakarta Sans";
-  background-color: #1a1a1a;
+  background-color: rgb(26, 26, 26);
 }
 
 .container {
@@ -749,6 +749,26 @@ body {
   transform: scale(1);
   transition: transform 250ms linear;
 }
+.our-support-list__item--shadow-bottom::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.5) 0%, rgb(26, 26, 26) 100%);
+}
+.our-support-list__item--shadow-top::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  background: linear-gradient(180deg, rgb(26, 26, 26) 0%, rgba(26, 26, 26, 0.5) 100%);
+}
 .our-support-list__item:hover, .our-support-list__item:focus {
   transform: scale(1.05);
 }
@@ -763,11 +783,6 @@ body {
   opacity: 0.2;
   border-radius: 32px;
   border: 1px solid #ccc;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-}
-.our-support-list__link--shadow {
-  top: 0;
-  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .our-support-list__svg {
   width: 240px;
