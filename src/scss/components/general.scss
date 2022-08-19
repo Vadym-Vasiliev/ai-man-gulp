@@ -60,6 +60,21 @@ body {
     margin-left: 0;
     margin-bottom: 121px;
 
+    @include desktop-min {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     &::after {
       position: absolute;
       bottom: -52px;

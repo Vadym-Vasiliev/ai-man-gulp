@@ -1,210 +1,210 @@
 html 
   include html/head
   body 
-    include html/header
+    //- include html/header
     main
-      //HERO
-      section.hero
-        .container
-          .hero-content
-            img.hero-content__img.hero-content__img--center(src="img/hero-center.png", alt="img")
-            img.hero-content__img.hero-content__img--left(src="img/hero-left.png", alt="img")
-            img.hero-content__img.hero-content__img--left-light(src="img/hero-left-light.png", alt="img")
-          .hero-top
-            h1.hero__title FASTER DATA WITH <span class="hero__title--span">AI.</span>
-          .hero-bottom
-            .hero-left
-              .hero-left__box.hero-left__box--shadow-left
-                .hero-left__content.hero-left__content--padding-left
-                  span.hero-left__span 240+
-                  p.hero-left__text PARTNERS
-              .hero-left__box.hero-left__box--shadow-right
-                .hero-left__content.hero-left__content--padding-right
-                  span.hero-left__span 92%
-                  p.hero-left__text FASTER TECHNOLOGY
-            .hero-right
-              p.hero-right__text 
-                | Better data leads to more performance models. 
-                | Performant models lead to faster deployment.
-              button.btn.hero-right__btn.hero-right__btn--start GET STARTED
-              button.btn.hero-right__btn.hero-right__btn--sale TALK TO SALES
-      //DISCOUNT
-      section.discount
-        .discount-content
-          .discount-bg
-            ul.discount-list
-              li.discount-list__item
-                img.discount-list__img(src="img/discount.png", alt="img")
-                p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
-              //- li.discount-list__item
-              //-   img.discount-list__img(src="img/discount.png", alt="img")
-              //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
-              //- li.discount-list__item
-              //-   img.discount-list__img(src="img/discount.png", alt="img")
-              //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
-      //TECHNOLOGY
-      section.techno
-        .container
-          .techno-content
-            .techno-top
-              h2.title OUR TECHNOLOGIES
-              button.btn-arrow.techno-top__btn
-                svg.techno-top__svg(width="125" height="125")
-                 use(href="")
-            ul.techno-list
-              li.techno-list__item.current-line
-                label.techno-list__label(for="radio1")
-                  input.techno-list__input(type="radio" name="radio-btn" id="radio1")
-                  span.techno-list__text RILLCUY
-              li.techno-list__item
-                label.techno-list__label(for="radio2")
-                  input.techno-list__input(type="radio" name="radio-btn" id="radio2")
-                  span.techno-list__text TRUKAHH
-              li.techno-list__item
-                label.techno-list__label(for="radio3")
-                  input.techno-list__input(type="radio" name="radio-btn" id="radio3")
-                  span.techno-list__text ASELII
-              li.techno-list__item
-                label.techno-list__label(for="radio4")
-                  input.techno-list__input(type="radio" name="radio-btn" id="radio4")
-                  span.techno-list__text KOCKGMG
-              li.techno-list__item
-                label.techno-list__label(for="radio5")
-                  input.techno-list__input(type="radio" name="radio-btn" id="radio5")
-                  span.techno-list__text MDITURU
-            .techno-bottom
-              .techno-bottom__left
-                h3.techno-bottom__title RILLCUY <span class="techno-bottom__title--span">AI.</span>
-                p.techno-bottom__text 
-                  | Annotate large volumes of 3D sensor, image, and video data at high throughput. 
-                  | ML-powered pre-labeling and an automated quality assurance system ensure high quality annotations.
-                ul.techno-bottom-list
-                  li.techno-bottom-list__item
-                    .techno-bottom-list__left
-                      svg.techno-bottom-list__svg(width="24" height="24")
-                        use(href="")
-                    p.techno-bottom-list__text Manage Your Datasets
-                  li.techno-bottom-list__item
-                    .techno-bottom-list__left
-                      svg.techno-bottom-list__svg(width="24" height="24")
-                        use(href="")
-                    p.techno-bottom-list__text Automate Document Processing
-                  li.techno-bottom-list__item
-                    .techno-bottom-list__left
-                      svg.techno-bottom-list__svg(width="24" height="24")
-                        use(href="")
-                    p.techno-bottom-list__text Scale Advanced Annotations
-                button.btn.techno-bottom-list__btn
-                  span.techno-bottom-list__span LEARN MORE
-                  span.techno-bottom-list__svg
-                    svg(width="32" height="32")
-              img.techno-bottom__img(src="img/techno-circle.png", alt="img")
-      //DEVELOP
-      section.develop
-        .container
-          h2.title.develop__title THE DEVELOPMENT OF AI
-          .develop-content
-            .develop-content__left
-              ul.develop-list.develop-list--after
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-1.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Annotate
-                    p.develop-list__info Annotate large volumes of 3D sensor, image, and video data.
-                  button.btn-arrow.develop-content__btn.develop-content__btn--top(type="button")
-                    svg.develop-content__svg(width="82" height="82")
-                      use(href="")
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-2.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Evaluate
-                    p.develop-list__info Quickly choose what data to label with active learning.
-                  button.btn-arrow.develop-content__btn.develop-content__btn--center(type="button")
-                    svg.develop-content__svg(width="82" height="82")
-                      use(href="")  
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-3.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Collect
-                    p.develop-list__info Collect and generate, image representative device, video.
-                  button.btn-arrow.develop-content__btn.develop-content__btn--bottom(type="button")
-                    svg.develop-content__svg(width="82" height="82")
-                      use(href="")
-            .develop-content__right
-              ul.develop-list.develop-list--before
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-4.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Manage
-                    p.develop-list__info Retrieve human insights for search relevance, ecommerce
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-5.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Automate
-                    p.develop-list__info Achieve robust document understanding and extraction .
-                li.develop-list__item
-                  img.develop-list__img(src="img/develop-6.png", alt="img")
-                  .develop-list__content
-                    p.develop-list__name Generate
-                    p.develop-list__info Augment ground-truth training data with infinite varieties  
-      //WE_SUPPORT
-      section.we-support
-        .container
-          .we-support-content
-            .we-support-content__top
-              h2.title THINGS WE SUPPORT
-              .we-support-content__btns
-                button.btn-arrow.we-support-content__btn(type="button")
-                  svg.we-support-content__svg.we-support-content__svg--left(width="75" height="75")
-                    use(href="")
-                button.btn-arrow.we-support-content__btn.we-support-content__btn--right(type="button")
-                  svg.we-support-content__svg.we-support-content__svg--right(width="75" height="75")
-                    use(href="")  
-            ul.we-support-list
-              li.we-support-list__item
-                a.we-support-list__link(href="#")
-                img.we-support-list__img(src="img/we-support-1.jpg", alt="img")
-                .we-support-list__content
-                  p.we-support-list__text RETAIL AND THE E - COMMERCE
-              li.we-support-list__item
-                a.we-support-list__link(href="#")
-                img.we-support-list__img(src="img/we-support-2.jpg", alt="img")
-                .we-support-list__content
-                  p.we-support-list__text AI FOR THE CONVERSATION
-              li.we-support-list__item
-                a.we-support-list__link(href="#")
-                img.we-support-list__img(src="img/we-support-3.jpg", alt="img")
-                .we-support-list__content
-                  p.we-support-list__text PERSONALIZE AND RELEVANCE
-              li.we-support-list__item
-                a.we-support-list__link(href="#")
-                img.we-support-list__img(src="img/we-support-4.jpg", alt="img")
-                .we-support-list__content
-                  p.we-support-list__text AUGMENTED AND VIRTUAL REALITY
-              //- li.we-support-list__item
-              //-   a.we-support-list__link(href="#")
-              //-   img.we-support-list__img(src="img/we-support-5.jpg", alt="img")
-              //-   .we-support-list__content
-              //-     p.we-support-list__text AUTOMATIC FOR VEHICLES
-      //REVIEW
-      section.review
-        .container
-          .review-content
-            .review-top
-              h2.title.review-top__title WHAT THEY SAY
-              p.review-top__text <span class="review-top__text--span">It was easy to get started with AI-MAN</span> because they had the platform and the people with the skillset to perform the annotation tasks we needed.
-            .review-bottom
-              //- button.btn-arrow.review-bottom__btn
-              //-   svg.review-bottom__svg(width="100" height="100")
-              //-     use(href="")
-              p.review-bottom__name Anakin Dripwalker
-              span.review-bottom__span
-              p.review-bottom__info Chief Data Scient, AI Order
-              //- button.btn-arrow.review-bottom__btn
-              //-   svg.review-bottom__svg(width="100" height="100")
-              //-     use(href="")
-      //OUR_SUPPORT
-      section.our-support
+      //- //HERO
+      //- section.hero
+      //-   .container
+      //-     .hero-content
+      //-       img.hero-content__img.hero-content__img--center(src="img/hero-center.png", alt="img")
+      //-       img.hero-content__img.hero-content__img--left(src="img/hero-left.png", alt="img")
+      //-       img.hero-content__img.hero-content__img--left-light(src="img/hero-left-light.png", alt="img")
+      //-     .hero-top
+      //-       h1.hero__title FASTER DATA WITH <span class="hero__title--span">AI.</span>
+      //-     .hero-bottom
+      //-       .hero-left
+      //-         .hero-left__box.hero-left__box--shadow-left
+      //-           .hero-left__content.hero-left__content--padding-left
+      //-             span.hero-left__span 240+
+      //-             p.hero-left__text PARTNERS
+      //-         .hero-left__box.hero-left__box--shadow-right
+      //-           .hero-left__content.hero-left__content--padding-right
+      //-             span.hero-left__span 92%
+      //-             p.hero-left__text FASTER TECHNOLOGY
+      //-       .hero-right
+      //-         p.hero-right__text 
+      //-           | Better data leads to more performance models. 
+      //-           | Performant models lead to faster deployment.
+      //-         button.btn.hero-right__btn.hero-right__btn--start GET STARTED
+      //-         button.btn.hero-right__btn.hero-right__btn--sale TALK TO SALES
+      //- //DISCOUNT
+      //- section.discount
+      //-   .discount-content
+      //-     .discount-bg
+      //-       ul.discount-list
+      //-         li.discount-list__item
+      //-           img.discount-list__img(src="img/discount.png", alt="img")
+      //-           p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
+      //-         //- li.discount-list__item
+      //-         //-   img.discount-list__img(src="img/discount.png", alt="img")
+      //-         //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
+      //-         //- li.discount-list__item
+      //-         //-   img.discount-list__img(src="img/discount.png", alt="img")
+      //-         //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
+      //- //TECHNOLOGY
+      //- section.techno
+      //-   .container
+      //-     .techno-content
+      //-       .techno-top
+      //-         h2.title OUR TECHNOLOGIES
+      //-         button.btn-arrow.techno-top__btn
+      //-           svg.techno-top__svg(width="125" height="125")
+      //-            use(href="")
+      //-       ul.techno-list
+      //-         li.techno-list__item.current-line
+      //-           label.techno-list__label(for="radio1")
+      //-             input.techno-list__input(type="radio" name="radio-btn" id="radio1")
+      //-             span.techno-list__text RILLCUY
+      //-         li.techno-list__item
+      //-           label.techno-list__label(for="radio2")
+      //-             input.techno-list__input(type="radio" name="radio-btn" id="radio2")
+      //-             span.techno-list__text TRUKAHH
+      //-         li.techno-list__item
+      //-           label.techno-list__label(for="radio3")
+      //-             input.techno-list__input(type="radio" name="radio-btn" id="radio3")
+      //-             span.techno-list__text ASELII
+      //-         li.techno-list__item
+      //-           label.techno-list__label(for="radio4")
+      //-             input.techno-list__input(type="radio" name="radio-btn" id="radio4")
+      //-             span.techno-list__text KOCKGMG
+      //-         li.techno-list__item
+      //-           label.techno-list__label(for="radio5")
+      //-             input.techno-list__input(type="radio" name="radio-btn" id="radio5")
+      //-             span.techno-list__text MDITURU
+      //-       .techno-bottom
+      //-         .techno-bottom__left
+      //-           h3.techno-bottom__title RILLCUY <span class="techno-bottom__title--span">AI.</span>
+      //-           p.techno-bottom__text 
+      //-             | Annotate large volumes of 3D sensor, image, and video data at high throughput. 
+      //-             | ML-powered pre-labeling and an automated quality assurance system ensure high quality annotations.
+      //-           ul.techno-bottom-list
+      //-             li.techno-bottom-list__item
+      //-               .techno-bottom-list__left
+      //-                 svg.techno-bottom-list__svg(width="24" height="24")
+      //-                   use(href="")
+      //-               p.techno-bottom-list__text Manage Your Datasets
+      //-             li.techno-bottom-list__item
+      //-               .techno-bottom-list__left
+      //-                 svg.techno-bottom-list__svg(width="24" height="24")
+      //-                   use(href="")
+      //-               p.techno-bottom-list__text Automate Document Processing
+      //-             li.techno-bottom-list__item
+      //-               .techno-bottom-list__left
+      //-                 svg.techno-bottom-list__svg(width="24" height="24")
+      //-                   use(href="")
+      //-               p.techno-bottom-list__text Scale Advanced Annotations
+      //-           button.btn.techno-bottom-list__btn
+      //-             span.techno-bottom-list__span LEARN MORE
+      //-             span.techno-bottom-list__svg
+      //-               svg(width="32" height="32")
+      //-         img.techno-bottom__img(src="img/techno-circle.png", alt="img")
+      //- //DEVELOP
+      //- section.develop
+      //-   .container
+      //-     h2.title.develop__title THE DEVELOPMENT OF AI
+      //-     .develop-content
+      //-       .develop-content__left
+      //-         ul.develop-list.develop-list--after
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-1.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Annotate
+      //-               p.develop-list__info Annotate large volumes of 3D sensor, image, and video data.
+      //-             button.btn-arrow.develop-content__btn.develop-content__btn--top(type="button")
+      //-               svg.develop-content__svg(width="82" height="82")
+      //-                 use(href="")
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-2.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Evaluate
+      //-               p.develop-list__info Quickly choose what data to label with active learning.
+      //-             button.btn-arrow.develop-content__btn.develop-content__btn--center(type="button")
+      //-               svg.develop-content__svg(width="82" height="82")
+      //-                 use(href="")  
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-3.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Collect
+      //-               p.develop-list__info Collect and generate, image representative device, video.
+      //-             button.btn-arrow.develop-content__btn.develop-content__btn--bottom(type="button")
+      //-               svg.develop-content__svg(width="82" height="82")
+      //-                 use(href="")
+      //-       .develop-content__right
+      //-         ul.develop-list.develop-list--before
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-4.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Manage
+      //-               p.develop-list__info Retrieve human insights for search relevance, ecommerce
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-5.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Automate
+      //-               p.develop-list__info Achieve robust document understanding and extraction .
+      //-           li.develop-list__item
+      //-             img.develop-list__img(src="img/develop-6.png", alt="img")
+      //-             .develop-list__content
+      //-               p.develop-list__name Generate
+      //-               p.develop-list__info Augment ground-truth training data with infinite varieties  
+      //- //WE_SUPPORT
+      //- section.we-support
+      //-   .container
+      //-     .we-support-content
+      //-       .we-support-content__top
+      //-         h2.title THINGS WE SUPPORT
+      //-         .we-support-content__btns
+      //-           button.btn-arrow.we-support-content__btn(type="button")
+      //-             svg.we-support-content__svg.we-support-content__svg--left(width="75" height="75")
+      //-               use(href="")
+      //-           button.btn-arrow.we-support-content__btn.we-support-content__btn--right(type="button")
+      //-             svg.we-support-content__svg.we-support-content__svg--right(width="75" height="75")
+      //-               use(href="")  
+      //-       ul.we-support-list
+      //-         li.we-support-list__item
+      //-           a.we-support-list__link(href="#")
+      //-           img.we-support-list__img(src="img/we-support-1.jpg", alt="img")
+      //-           .we-support-list__content
+      //-             p.we-support-list__text RETAIL AND THE E - COMMERCE
+      //-         li.we-support-list__item
+      //-           a.we-support-list__link(href="#")
+      //-           img.we-support-list__img(src="img/we-support-2.jpg", alt="img")
+      //-           .we-support-list__content
+      //-             p.we-support-list__text AI FOR THE CONVERSATION
+      //-         li.we-support-list__item
+      //-           a.we-support-list__link(href="#")
+      //-           img.we-support-list__img(src="img/we-support-3.jpg", alt="img")
+      //-           .we-support-list__content
+      //-             p.we-support-list__text PERSONALIZE AND RELEVANCE
+      //-         li.we-support-list__item
+      //-           a.we-support-list__link(href="#")
+      //-           img.we-support-list__img(src="img/we-support-4.jpg", alt="img")
+      //-           .we-support-list__content
+      //-             p.we-support-list__text AUGMENTED AND VIRTUAL REALITY
+      //-         //- li.we-support-list__item
+      //-         //-   a.we-support-list__link(href="#")
+      //-         //-   img.we-support-list__img(src="img/we-support-5.jpg", alt="img")
+      //-         //-   .we-support-list__content
+      //-         //-     p.we-support-list__text AUTOMATIC FOR VEHICLES
+      //- //REVIEW
+      //- section.review
+      //-   .container
+      //-     .review-content
+      //-       .review-top
+      //-         h2.title.review-top__title WHAT THEY SAY
+      //-         p.review-top__text <span class="review-top__text--span">It was easy to get started with AI-MAN</span> because they had the platform and the people with the skillset to perform the annotation tasks we needed.
+      //-       .review-bottom
+      //-         //- button.btn-arrow.review-bottom__btn
+      //-         //-   svg.review-bottom__svg(width="100" height="100")
+      //-         //-     use(href="")
+      //-         p.review-bottom__name Anakin Dripwalker
+      //-         span.review-bottom__span
+      //-         p.review-bottom__info Chief Data Scient, AI Order
+      //-         //- button.btn-arrow.review-bottom__btn
+      //-         //-   svg.review-bottom__svg(width="100" height="100")
+      //-         //-     use(href="")
+      //- //OUR_SUPPORT
+      //- section.our-support
         .container
             h2.title.our-support__title SUPPORTED BY
             .our-support-top

@@ -332,6 +332,24 @@ body.modal-open {
   margin-left: 0;
   margin-bottom: 121px;
 }
+@media screen and (min-width: 992px) and (max-width: 1309px) {
+  .list--footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list--footer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .list--footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .list--footer::after {
   position: absolute;
   bottom: -52px;
@@ -967,9 +985,34 @@ body.modal-open {
   display: flex;
   gap: 130px;
 }
+@media screen and (min-width: 992px) and (max-width: 1309px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
 
 .footer-left {
   min-width: 329px;
+}
+@media screen and (max-width: 767px) {
+  .footer-left {
+    text-align: center;
+    max-width: 329px;
+    margin: 0 auto;
+    min-width: 0;
+  }
 }
 .footer-left__text {
   font-weight: 400;
@@ -984,6 +1027,17 @@ body.modal-open {
   align-items: center;
   gap: 211px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-right__bottom {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-right__bottom {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
 .footer-right__text {
   font-weight: 500;
   font-size: 16px;
@@ -991,11 +1045,28 @@ body.modal-open {
   letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.5);
 }
+@media screen and (max-width: 767px) {
+  .footer-right__text {
+    text-align: center;
+  }
+}
 .footer-right__links {
   display: flex;
   align-items: center;
   gap: 64px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-right__links {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-right__links {
+    margin-left: 0;
+    gap: 32px;
+    text-align: center;
+  }
 }
 .footer-right__link {
   position: relative;
