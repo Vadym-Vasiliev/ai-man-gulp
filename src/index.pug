@@ -3,6 +3,31 @@ html
   body 
     include html/header
     main
+      //HERO
+      section.hero
+        .container
+          .hero-content
+            img.hero-content__img.hero-content__img--center(src="img/hero-center.png", alt="img")
+            img.hero-content__img.hero-content__img--left(src="img/hero-left.png", alt="img")
+            img.hero-content__img.hero-content__img--left-light(src="img/hero-left-light.png", alt="img")
+          .hero-top
+            h1.hero__title FASTER DATA WITH <span class="hero__title--span">AI.</span>
+          .hero-bottom
+            .hero-left
+              .hero-left__box.hero-left__box--shadow-left
+                .hero-left__content.hero-left__content--padding-left
+                  span.hero-left__span 240+
+                  p.hero-left__text PARTNERS
+              .hero-left__box.hero-left__box--shadow-right
+                .hero-left__content.hero-left__content--padding-right
+                  span.hero-left__span 92%
+                  p.hero-left__text FASTER TECHNOLOGY
+            .hero-right
+              p.hero-right__text 
+                | Better data leads to more performance models. 
+                | Performant models lead to faster deployment.
+              button.btn.hero-right__btn.hero-right__btn--start GET STARTED
+              button.btn.hero-right__btn.hero-right__btn--sale TALK TO SALES
       //DISCOUNT
       section.discount
         .discount-content
@@ -17,9 +42,6 @@ html
               //- li.discount-list__item
               //-   img.discount-list__img(src="img/discount.png", alt="img")
               //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
-
-
-
       //TECHNOLOGY
       section.techno
         .container
@@ -237,8 +259,26 @@ html
                 //-   a.our-support-list__link(href="#")
                 //-     svg.our-support-list__svg
                           use(href="")
- 
-
     include html/footer
+    //BACKDROP_MODAL
+    .backdrop.backdrop__is-hidden(data-modal="")
+      .backdrop-modal
+        .modal-form
+          button.modal-form__close(data-modal-close="")
+            span.modal-form__cross
+          .modal-form__box
+            label.modal-form__label(for="name") Name
+              input.modal-form__input(type="text" name="name" id="name")
+          .modal-form__box
+            label.modal-form__label(for="tel") Telephone
+              input.modal-form__input(type="tel" name="tel" id="tel")
+          .modal-form__box
+            label.modal-form__label(for="email") Email
+              input.modal-form__input(type="email" name="email" id="email")
+          .modal-form__box
+            label.modal-form__label(for="comment") Comment
+              textarea.modal-form__comment(name="comment",  rows="6")
+          button.btn.modal-form__btn(type="submit") Submit
+
     script(src="js/app.min.js")
 

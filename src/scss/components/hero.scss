@@ -1,0 +1,159 @@
+.hero {
+  padding-bottom: 258px;
+
+  &__title {
+    font-family: $font-raleway;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 1.17;
+    margin-bottom: 64px;
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+      90.01deg,
+      #ffffff 0.01%,
+      rgba(255, 255, 255, 0.3) 49.48%,
+      #ffffff 99.99%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &--span {
+      background: $before-line;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.hero-content {
+  position: relative;
+  &__img {
+    position: absolute;
+    z-index: -1;
+    &--center {
+      width: 459px;
+      right: 470px;
+      top: 150px;
+    }
+
+    &--left {
+      width: 1190px;
+      top: 150px;
+      right: 220px;
+    }
+
+    &--left-light {
+      width: 751px;
+      top: 150px;
+      right: 220px;
+    }
+  }
+}
+
+.hero-top {
+  padding-top: 114px;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+
+  &__box {
+    position: relative;
+    width: 202px;
+    height: 160px;
+
+    &--shadow-left::before,
+    &--shadow-right::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--shadow-left::before {
+    }
+
+    &--shadow-right::after {
+    }
+  }
+
+  &__content {
+    position: absolute;
+    width: 202px;
+    height: 160px;
+    opacity: 0.2;
+    border-radius: 32px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--padding-left {
+      padding: 30px 60px 30px 30px;
+    }
+
+    &--padding-right {
+      padding: 30px 0 30px 30px;
+      width: 231px;
+    }
+  }
+
+  &__span {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    color: $white;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+
+    color: $white-opacity;
+  }
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 444px;
+}
+
+.hero-right {
+  max-width: 400px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: -0.03em;
+    margin-bottom: 48px;
+
+    color: $white-opacity;
+  }
+
+  &__btn {
+    display: block;
+    &--start {
+      margin-bottom: 36px;
+
+      color: $main-bg;
+      background-color: $white;
+    }
+
+    &--sale {
+      margin-left: auto;
+      border-radius: 120px;
+    }
+  }
+}

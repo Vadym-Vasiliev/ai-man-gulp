@@ -22,7 +22,7 @@
             <li class="list__item"><a class="list__link" href="#">PRICING</a></li>
             <li class="list__item"><a class="list__link" href="#">RESOURCES</a></li>
           </ul>
-          <button class="btn header-content__btn" type="button">REGISTER NOW
+          <button class="btn header-content__btn" type="button" data-modal-open="data-modal-open">REGISTER NOW
             <svg class="header-content__svg" width="23" height="23">
               <use href=""></use>
             </svg>
@@ -31,6 +31,37 @@
       </div>
     </header>
     <main>
+      <!--HERO-->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content"><img class="hero-content__img hero-content__img--center" src="img/hero-center.png" alt="img"/><img class="hero-content__img hero-content__img--left" src="img/hero-left.png" alt="img"/><img class="hero-content__img hero-content__img--left-light" src="img/hero-left-light.png" alt="img"/></div>
+          <div class="hero-top">
+            <h1 class="hero__title">FASTER DATA WITH <span class="hero__title--span">AI.</span></h1>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-left">
+              <div class="hero-left__box hero-left__box--shadow-left">
+                <div class="hero-left__content hero-left__content--padding-left"><span class="hero-left__span">240+</span>
+                  <p class="hero-left__text">PARTNERS</p>
+                </div>
+              </div>
+              <div class="hero-left__box hero-left__box--shadow-right">
+                <div class="hero-left__content hero-left__content--padding-right"><span class="hero-left__span">92%</span>
+                  <p class="hero-left__text">FASTER TECHNOLOGY</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-right">
+              <p class="hero-right__text">
+                 Better data leads to more performance models. 
+                Performant models lead to faster deployment.
+              </p>
+              <button class="btn hero-right__btn hero-right__btn--start">GET STARTED</button>
+              <button class="btn hero-right__btn hero-right__btn--sale">TALK TO SALES</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--DISCOUNT-->
       <section class="discount">
         <div class="discount-content">
@@ -318,6 +349,35 @@
         </div>
       </div>
     </footer>
+    <!--BACKDROP_MODAL-->
+    <div class="backdrop backdrop__is-hidden" data-modal="">
+      <div class="backdrop-modal">
+        <div class="modal-form">
+          <button class="modal-form__close" data-modal-close=""><span class="modal-form__cross"></span></button>
+          <div class="modal-form__box">
+            <label class="modal-form__label" for="name">Name
+              <input class="modal-form__input" type="text" name="name" id="name"/>
+            </label>
+          </div>
+          <div class="modal-form__box">
+            <label class="modal-form__label" for="tel">Telephone
+              <input class="modal-form__input" type="tel" name="tel" id="tel"/>
+            </label>
+          </div>
+          <div class="modal-form__box">
+            <label class="modal-form__label" for="email">Email
+              <input class="modal-form__input" type="email" name="email" id="email"/>
+            </label>
+          </div>
+          <div class="modal-form__box">
+            <label class="modal-form__label" for="comment">Comment
+              <textarea class="modal-form__comment" name="comment" rows="6"></textarea>
+            </label>
+          </div>
+          <button class="btn modal-form__btn" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
