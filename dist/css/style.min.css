@@ -407,6 +407,48 @@ body {
   transform-origin: bottom left;
 }
 
+.discount {
+  padding-bottom: 180px;
+}
+
+.discount-content {
+  position: relative;
+  min-height: 148px;
+  background-color: rgba(169, 169, 169, 0.2);
+}
+
+.discount-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
+}
+
+.discount-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discount-list__item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 27px;
+}
+.discount-list__img {
+  width: 61px;
+}
+.discount-list__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
 .techno {
   padding-bottom: 180px;
 }
