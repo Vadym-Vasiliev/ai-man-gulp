@@ -862,6 +862,11 @@ body.modal-open {
 .review {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 767px) {
+  .review {
+    padding-bottom: 100px;
+  }
+}
 
 .review-content {
   max-width: 1200px;
@@ -875,6 +880,12 @@ body.modal-open {
   text-align: center;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 767px) {
+  .review-top__title {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+}
 .review-top__text {
   font-weight: 400;
   font-size: 48px;
@@ -884,6 +895,16 @@ body.modal-open {
 .review-top__text--span {
   color: #ffffff;
 }
+@media screen and (min-width: 992px) and (max-width: 1309px) {
+  .review-top__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .review-top__text {
+    text-align: center;
+  }
+}
 
 .review-bottom {
   position: relative;
@@ -892,6 +913,17 @@ body.modal-open {
   gap: 36px;
   max-width: 695px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .review-bottom {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .review-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .review-bottom__btn {
   position: absolute;
