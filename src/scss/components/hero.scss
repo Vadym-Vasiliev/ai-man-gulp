@@ -30,7 +30,7 @@
   position: relative;
   &__img {
     position: absolute;
-    z-index: -1;
+
     &--center {
       width: 459px;
       right: 470px;
@@ -41,18 +41,26 @@
       width: 1190px;
       top: 150px;
       right: 220px;
+      z-index: -1;
     }
 
     &--left-light {
       width: 751px;
       top: 150px;
       right: 220px;
+      z-index: -1;
     }
   }
 }
 
 .hero-top {
   padding-top: 114px;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 444px;
 }
 
 .hero-left {
@@ -64,40 +72,56 @@
     position: relative;
     width: 202px;
     height: 160px;
-
-    &--shadow-left::before,
-    &--shadow-right::after {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    &--shadow-left::before {
-    }
-
-    &--shadow-right::after {
-    }
   }
 
   &__content {
     position: absolute;
     width: 202px;
     height: 160px;
-    opacity: 0.2;
     border-radius: 32px;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0.2;
+    z-index: -1;
 
-    &--padding-left {
+    background-color: rgba(255, 255, 255, 0.2);
+
+    &--shadow-left::before,
+    &--shadow-right::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -1;
+      width: 100px;
+      height: 100%;
+      z-index: -1;
+    }
+
+    &--shadow-left::before {
+      background: linear-gradient(
+        90deg,
+        rgba(25, 25, 25) 0%,
+        rgba(25, 25, 25, 0.2) 100%
+      );
+    }
+
+    &--shadow-right::after {
+      left: 66%;
+      transform: rotate(180deg);
+      background: linear-gradient(
+        90deg,
+        rgba(25, 25, 25) 0%,
+        rgba(25, 25, 25, 0.2) 100%
+      );
+    }
+
+    &--shadow-left {
       padding: 30px 60px 30px 30px;
     }
 
-    &--padding-right {
+    &--shadow-right {
       padding: 30px 0 30px 30px;
       width: 231px;
     }
@@ -123,12 +147,6 @@
   }
 }
 
-.hero-bottom {
-  display: flex;
-  align-items: flex-start;
-  gap: 444px;
-}
-
 .hero-right {
   max-width: 400px;
 
@@ -143,10 +161,11 @@
   }
 
   &__btn {
+    position: relative;
     display: block;
+
     &--start {
       margin-bottom: 36px;
-
       color: $main-bg;
       background-color: $white;
     }
@@ -154,6 +173,23 @@
     &--sale {
       margin-left: auto;
       border-radius: 120px;
+      border: 1px solid #ccc;
+      opacity: 0.2;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -1;
+        width: 80px;
+        height: 100%;
+
+        background: linear-gradient(
+          90deg,
+          rgba(25, 25, 25) 0%,
+          rgba(25, 25, 25, 0.2) 100%
+        );
+      }
     }
   }
 }
