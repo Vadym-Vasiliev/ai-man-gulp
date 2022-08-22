@@ -2,21 +2,24 @@
 header.header
   .container
     .header-content
-      a.logo(href="#") <span class="logo--span">AI.</span>MAN
-      ul.list
-        li.list__item
-          a.list__link(href="#") PRODUCTS 
-        li.list__item
-          a.list__link(href="#") SOLUTIONS
-        li.list__item
-          a.list__link(href="#") CUSTOMER
-        li.list__item
-          a.list__link(href="#") PRICING
-        li.list__item
-          a.list__link(href="#") RESOURCES
-      button.btn.header-content__btn(type="button" data-modal-open) REGISTER NOW
-        svg.header-content__svg(width="23" height="23")
-          use(href="")
+      a.logo.logo--header(href="#") <span class="logo--span">AI.</span>MAN
+      button.header-menu-btn(type="button" data-menu-btn)
+        span.header-menu-btn__span
+      .header-menu(data-menu)
+        ul.list.list--header
+          li.list__item
+            a.list__link(href="#") PRODUCTS 
+          li.list__item
+            a.list__link(href="#") SOLUTIONS
+          li.list__item
+            a.list__link(href="#") CUSTOMER
+          li.list__item
+            a.list__link(href="#") PRICING
+          li.list__item
+            a.list__link(href="#") RESOURCES
+        button.btn.header-content__btn(type="button" data-modal-open) REGISTER NOW
+          svg.header-content__svg(width="23" height="23")
+           use(href="")
         
           
   

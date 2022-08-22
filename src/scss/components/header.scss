@@ -1,10 +1,28 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
   padding-top: 48px;
+  padding-bottom: 24px;
+
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+
+  background-color: rgba(0, 0, 0, 0.549);
 }
 
 .header-content {
   display: flex;
   align-items: center;
+
+  @include desktop-min {
+    justify-content: space-between;
+    gap: 40px;
+  }
 
   &__btn {
     position: relative;
@@ -16,6 +34,17 @@
     align-items: center;
     margin-left: auto;
     padding: 0;
+
+    @include mobile {
+      font-size: 30px;
+      min-width: 100%;
+      border-radius: 0;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+
+      background-color: $black;
+    }
 
     &::before {
       position: absolute;
@@ -37,5 +66,112 @@
       transform: scaleX(1);
       transform-origin: bottom left;
     }
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+
+  @include desktop-max {
+    gap: 120px;
+  }
+
+  @include desktop-min {
+    gap: 40px;
+  }
+
+  @include tablet {
+    gap: 40px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  &__is-open {
+    @include mobile {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-color: $white;
+    }
+  }
+}
+
+.header-menu-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  background-color: transparent;
+
+  &__is-open {
+    .header-menu-btn__span {
+      height: 0;
+    }
+
+    .header-menu-btn__span::before {
+      transform: rotate(-45deg);
+      margin-top: 0;
+    }
+
+    .header-menu-btn__span::after {
+      transform: rotate(45deg);
+      margin-top: 0;
+    }
+  }
+
+  &__span {
+    position: relative;
+    width: 50px;
+    height: 3px;
+    display: block;
+
+    background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%),
+      #ffffff;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 3px;
+      display: block;
+      transition: 250ms ease-in-out;
+
+      background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%),
+        #ffffff;
+    }
+
+    &::before {
+      margin-top: 12px;
+    }
+
+    &::after {
+      margin-top: -12px;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop-min {
+    display: none;
+  }
+  @include desktop-max {
+    display: none;
   }
 }

@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   transition: 250ms linear;
 
   background-color: rgba(0, 0, 0, 0.6);
@@ -26,6 +27,10 @@
   padding: 40px;
 
   background-color: #fff;
+
+  @include mobile {
+    width: 350px;
+  }
 }
 
 .modal-form {

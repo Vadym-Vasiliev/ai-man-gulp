@@ -3,7 +3,8 @@ body {
 
   background-color: $main-bg;
 
-  &.modal-open {
+  &.modal-open,
+  &.header-menu-open {
     overflow: hidden;
   }
 }
@@ -38,6 +39,12 @@ body {
 
   color: $white-opacity;
 
+  &--header {
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+
   &--span {
     background: $before-line;
     -webkit-background-clip: text;
@@ -54,6 +61,25 @@ body {
   align-items: center;
   gap: 64px;
   margin-left: 223px;
+
+  &--header {
+    @include desktop-min {
+      gap: 32px;
+      margin-left: auto;
+    }
+
+    @include tablet {
+      margin-left: 40px;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      margin-left: 0;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+  }
 
   &--footer {
     position: relative;
@@ -93,6 +119,11 @@ body {
     transition: color 250ms linear;
 
     color: $white-opacity;
+
+    @include mobile {
+      color: $black;
+      font-size: 28px;
+    }
 
     &:hover,
     &:focus {
