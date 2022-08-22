@@ -47,6 +47,10 @@
   align-items: center;
   gap: 20px;
 
+  @include desktop-max {
+    justify-content: center;
+  }
+
   @include desktop-min {
     justify-content: center;
     flex-wrap: wrap;
