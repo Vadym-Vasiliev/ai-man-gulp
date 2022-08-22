@@ -1,6 +1,14 @@
 .hero {
   padding-bottom: 258px;
 
+  @include tablet {
+    padding-bottom: 180px;
+  }
+
+  @include mobile {
+    padding-bottom: 100px;
+  }
+
   &__title {
     font-family: $font-raleway;
     font-weight: 800;
@@ -23,11 +31,33 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    @include desktop-min {
+      font-size: 79px;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile {
+      font-size: 80px;
+      text-align: center;
+    }
   }
 }
 
 .hero-content {
   position: relative;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
   &__img {
     position: absolute;
 
@@ -35,6 +65,11 @@
       width: 459px;
       right: 470px;
       top: 150px;
+
+      @include desktop-min {
+        z-index: -1;
+        opacity: 0.2;
+      }
     }
 
     &--left {
@@ -61,12 +96,32 @@
   display: flex;
   align-items: flex-start;
   gap: 444px;
+
+  @include desktop-min {
+    gap: 100px;
+  }
+
+  @include tablet {
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mobile {
+    gap: 100px;
+    flex-direction: column;
+  }
 }
 
 .hero-left {
   display: flex;
   align-items: center;
   gap: 27px;
+
+  @include mobile {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
   &__box {
     position: relative;
@@ -149,6 +204,14 @@
 
 .hero-right {
   max-width: 400px;
+
+  @include desktop-min {
+    margin-left: auto;
+  }
+
+  @include mobile {
+    margin: 0 auto;
+  }
 
   &__text {
     font-weight: 400;

@@ -431,6 +431,16 @@ body.modal-open {
 .hero {
   padding-bottom: 258px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    padding-bottom: 180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
 .hero__title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -447,9 +457,35 @@ body.modal-open {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 992px) and (max-width: 1419px) {
+  .hero__title {
+    font-size: 79px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero__title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 80px;
+    text-align: center;
+  }
+}
 
 .hero-content {
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-content {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-content {
+    display: none;
+  }
 }
 .hero-content__img {
   position: absolute;
@@ -458,6 +494,12 @@ body.modal-open {
   width: 459px;
   right: 470px;
   top: 150px;
+}
+@media screen and (min-width: 992px) and (max-width: 1419px) {
+  .hero-content__img--center {
+    z-index: -1;
+    opacity: 0.2;
+  }
 }
 .hero-content__img--left {
   width: 1190px;
@@ -481,11 +523,35 @@ body.modal-open {
   align-items: flex-start;
   gap: 444px;
 }
+@media screen and (min-width: 992px) and (max-width: 1419px) {
+  .hero-bottom {
+    gap: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-bottom {
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-bottom {
+    gap: 100px;
+    flex-direction: column;
+  }
+}
 
 .hero-left {
   display: flex;
   align-items: center;
   gap: 27px;
+}
+@media screen and (max-width: 767px) {
+  .hero-left {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 .hero-left__box {
   position: relative;
@@ -547,6 +613,16 @@ body.modal-open {
 
 .hero-right {
   max-width: 400px;
+}
+@media screen and (min-width: 992px) and (max-width: 1419px) {
+  .hero-right {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-right {
+    margin: 0 auto;
+  }
 }
 .hero-right__text {
   font-weight: 400;
