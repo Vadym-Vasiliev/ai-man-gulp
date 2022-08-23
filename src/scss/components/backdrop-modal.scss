@@ -119,6 +119,10 @@
     &:focus {
       border-color: rgb(100, 97, 97);
     }
+
+    &.error {
+      border-color: red;
+    }
   }
 
   &__comment {

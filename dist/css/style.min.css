@@ -1824,6 +1824,9 @@ body.modal-open, body.header-menu-open {
 .modal-form__input:hover, .modal-form__input:focus {
   border-color: rgb(100, 97, 97);
 }
+.modal-form__input.error {
+  border-color: red;
+}
 .modal-form__comment {
   resize: none;
   height: 80px;

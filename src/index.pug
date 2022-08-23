@@ -263,7 +263,7 @@ html
     //BACKDROP_MODAL
     .backdrop.backdrop__is-hidden(data-modal="")
       .backdrop-modal
-        .modal-form
+        form.modal-form(action="#" id="form")
           button.modal-form__close(data-modal-close="")
             span.modal-form__cross
           .modal-form__box
@@ -271,10 +271,10 @@ html
               input.modal-form__input(type="text" name="name" id="name")
           .modal-form__box
             label.modal-form__label(for="tel") Telephone
-              input.modal-form__input(type="tel" name="tel" id="tel")
+              input.modal-form__input.modal-form__input-phone(type="tel" name="tel" id="tel")
           .modal-form__box
             label.modal-form__label(for="email") Email
-              input.modal-form__input(type="email" name="email" id="email")
+              input.modal-form__input.modal-form__input-email(type="email" name="email" id="email")
           .modal-form__box
             label.modal-form__label(for="comment") Comment
               textarea.modal-form__comment(name="comment",  rows="6")
