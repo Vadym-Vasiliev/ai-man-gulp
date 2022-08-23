@@ -1,0 +1,1 @@
+$(".our-support-top").slick();
