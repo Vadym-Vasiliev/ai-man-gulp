@@ -31,6 +31,19 @@
     gap: 80px;
   }
 
+  &__svg {
+    @include tablet {
+      transform: rotate(90deg);
+    }
+    &--rotate {
+      transform: rotate(180deg);
+
+      @include tablet {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
   &__btn {
     position: absolute;
     top: 50%;
@@ -38,7 +51,6 @@
     transform: translate(420%, -50%);
     width: 82px;
     height: 82px;
-    background-color: $white;
 
     @include desktop-min {
       transform: translate(296%, -50%);
@@ -52,136 +64,136 @@
       display: none;
     }
   }
-}
 
-.develop-list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  @include desktop-max {
-    max-width: 508px;
-  }
-
-  @include desktop-min {
-    max-width: 508px;
-  }
-
-  @include tablet {
-    flex-direction: row;
-  }
-
-  @include mobile {
-    gap: 32px;
-    align-items: center;
-  }
-
-  &--after::after {
-    position: absolute;
-    content: "";
-    bottom: 50%;
-    left: 50%;
-    width: 570px;
-    height: 1px;
-    transform: rotate(90deg);
-
-    background-color: rgb(255, 255, 255, 0.2);
-
-    @include desktop-min {
-      transform: rotate(0);
-      transform: translate(0px, 208px);
-    }
-
-    @include tablet {
-      display: none;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  &--before::before {
-    position: absolute;
-    content: "";
-    bottom: 50%;
-    right: 50%;
-    width: 570px;
-    height: 1px;
-    transform: rotate(90deg);
-
-    background-color: rgb(255, 255, 255, 0.2);
-
-    @include desktop-min {
-      transform: rotate(0);
-      transform: translate(0px, -206px);
-    }
-
-    @include tablet {
-      display: none;
-    }
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  &__item {
+  .develop-list {
     position: relative;
     display: flex;
-    align-items: center;
-    gap: 32px;
-    max-width: 508px;
+    flex-direction: column;
+    gap: 64px;
+    @include desktop-max {
+      max-width: 508px;
+    }
 
     @include desktop-min {
-      flex-direction: column;
+      max-width: 508px;
     }
 
     @include tablet {
-      flex-direction: column;
+      flex-direction: row;
     }
 
     @include mobile {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-
-  &__img {
-    width: 160px;
-  }
-
-  &__content {
-    max-width: 316px;
-
-    @include desktop-min {
-      text-align: center;
+      gap: 32px;
+      align-items: center;
     }
 
-    @include tablet {
-      text-align: center;
+    &--after::after {
+      position: absolute;
+      content: "";
+      bottom: 50%;
+      left: 50%;
+      width: 570px;
+      height: 1px;
+      transform: rotate(90deg);
+
+      background-color: rgb(255, 255, 255, 0.2);
+
+      @include desktop-min {
+        transform: rotate(0);
+        transform: translate(0px, 208px);
+      }
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        display: none;
+      }
     }
 
-    @include mobile {
-      text-align: center;
+    &--before::before {
+      position: absolute;
+      content: "";
+      bottom: 50%;
+      right: 50%;
+      width: 570px;
+      height: 1px;
+      transform: rotate(90deg);
+
+      background-color: rgb(255, 255, 255, 0.2);
+
+      @include desktop-min {
+        transform: rotate(0);
+        transform: translate(0px, -206px);
+      }
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        display: none;
+      }
     }
-  }
 
-  &__name {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 2;
-    margin-bottom: 8px;
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      max-width: 508px;
 
-    color: $white;
-  }
+      @include desktop-min {
+        flex-direction: column;
+      }
 
-  &__info {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 2;
-    letter-spacing: -0.03em;
+      @include tablet {
+        flex-direction: column;
+      }
 
-    color: $white-opacity;
+      @include mobile {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+
+    &__img {
+      width: 160px;
+    }
+
+    &__content {
+      max-width: 316px;
+
+      @include desktop-min {
+        text-align: center;
+      }
+
+      @include tablet {
+        text-align: center;
+      }
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &__name {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 2;
+      margin-bottom: 8px;
+
+      color: $white;
+    }
+
+    &__info {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 2;
+      letter-spacing: -0.03em;
+
+      color: $white-opacity;
+    }
   }
 }
