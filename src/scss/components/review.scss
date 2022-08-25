@@ -2,17 +2,14 @@
   padding-bottom: 180px;
 
   @include mobile {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 }
 
 .review-content {
   max-width: 1200px;
   margin: 0 auto;
-}
 
-.review-top {
-  margin-bottom: 73px;
   &__title {
     text-align: center;
     margin-bottom: 80px;
@@ -20,6 +17,19 @@
     @include mobile {
       font-size: 60px;
       margin-bottom: 60px;
+    }
+  }
+}
+
+.review-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__top {
+    margin-bottom: 73px;
+
+    @include mobile {
+      margin-bottom: 200px;
     }
   }
 
@@ -38,32 +48,36 @@
       text-align: center;
     }
 
+    @include tablet {
+      text-align: center;
+    }
+
     @include mobile {
       text-align: center;
     }
   }
-}
 
-.review-bottom {
-  max-width: 1200px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-  margin: 0 auto;
+  &__bottom {
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    margin: 0 auto;
 
-  @include desktop-min {
-    gap: 12px;
-  }
+    @include desktop-min {
+      gap: 12px;
+    }
 
-  @include tablet {
-    gap: 12px;
-  }
+    @include tablet {
+      gap: 12px;
+    }
 
-  @include mobile {
-    flex-direction: column;
-    text-align: center;
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__name {
@@ -77,6 +91,7 @@
 
     @include tablet {
       text-align: center;
+      width: 200px;
     }
   }
 
@@ -95,6 +110,7 @@
 
     @include tablet {
       text-align: center;
+      width: 200px;
     }
   }
 
@@ -111,5 +127,65 @@
         margin-left: 50px;
       }
     }
+  }
+}
+
+.review-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  font-size: 0;
+  width: 120px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms linear;
+
+  color: white;
+  background-color: transparent;
+
+  @include tablet {
+    bottom: 5%;
+    width: 60px;
+  }
+
+  @include mobile {
+    text-align: center;
+    bottom: 17%;
+  }
+
+  &:hover,
+  &:focus {
+    &.slick-prev {
+      color: black;
+      background-color: rgba(255, 255, 255, 0.812);
+    }
+
+    &.slick-next {
+      color: black;
+      background-color: rgba(255, 255, 255, 0.812);
+    }
+  }
+
+  &::before {
+    font-size: 60px;
+    content: "";
+  }
+}
+
+.review-slider .slick-prev {
+  left: 0;
+  &::before {
+    content: "\2190";
+  }
+}
+
+.review-slider .slick-next {
+  right: 0;
+  &::before {
+    content: "\2192";
   }
 }

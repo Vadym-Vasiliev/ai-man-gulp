@@ -129,9 +129,13 @@
 }
 
 .techno-bottom {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 16px;
+
+  &.is-visible {
+    display: flex;
+  }
 
   &__left {
     max-width: 586px;

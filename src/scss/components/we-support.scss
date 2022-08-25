@@ -7,14 +7,20 @@
 }
 
 .we-support-content {
+  position: relative;
   &__top {
     display: flex;
     align-items: center;
     margin-bottom: 99px;
 
+    @include tablet {
+      margin-bottom: 250px;
+    }
+
     @include mobile {
       flex-direction: column;
       gap: 20px;
+      margin-bottom: 250px;
     }
   }
 
@@ -31,18 +37,9 @@
       margin-left: 0;
     }
   }
-
-  &__btn {
-    width: 120px;
-    height: 120px;
-
-    &--right {
-      background-color: $white;
-    }
-  }
 }
 
-.we-support-list {
+.we-support-list-carousel {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -53,21 +50,42 @@
 
   @include desktop-min {
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   @include tablet {
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   @include mobile {
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   &__item {
     max-width: 320px;
+
+    @include desktop-max {
+      margin-right: 24px;
+    }
+
+    @include desktop-min {
+      margin-right: 24px;
+    }
+
+    @include tablet {
+      margin-right: 12px;
+    }
+
+    @include mobile {
+      margin-right: 12px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @include desktop-min {
+      max-width: 275px;
+    }
 
     @include tablet {
       max-width: 300px;
@@ -75,7 +93,10 @@
   }
 
   &__img {
-    width: 320px;
+    width: 300px;
+    @include desktop-min {
+      width: 275px;
+    }
     @include tablet {
       width: 300px;
     }
@@ -93,5 +114,55 @@
     min-width: 312px;
 
     color: $white;
+
+    @include tablet {
+      min-width: 275px;
+    }
+  }
+}
+
+.we-support-list-carousel .slick-arrow {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 1;
+  transition: 250ms linear;
+
+  color: $white;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    &.slick-prev {
+      background-color: rgba(0, 0, 0, 0.304);
+    }
+    &.slick-next {
+      color: black;
+      background-color: rgba(255, 255, 255, 0.812);
+    }
+  }
+
+  &::before {
+    font-size: 70px;
+    content: "";
+  }
+}
+
+.we-support-list-carousel .slick-prev {
+  right: 120px;
+
+  &::before {
+    content: "\2190";
+  }
+}
+
+.we-support-list-carousel .slick-next {
+  &::before {
+    content: "\2192";
   }
 }
