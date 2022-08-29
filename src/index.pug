@@ -5,11 +5,10 @@ html
     main
       //- //HERO
       section.hero
+        
         .container
           .hero-content
-            img.hero-content__img.hero-content__img--center(src="img/hero-center.png", alt="img")
-            img.hero-content__img.hero-content__img--left(src="img/hero-left.png", alt="img")
-            img.hero-content__img.hero-content__img--left-light(src="img/hero-left-light.png", alt="img")
+            img.hero-content__img(src="img/hero.png", alt="img")
           .hero-top
             h1.hero__title FASTER DATA WITH <span class="hero__title--span">AI.</span>
           .hero-bottom
@@ -31,11 +30,10 @@ html
       //- //DISCOUNT
       section.discount
         .discount-content
-          .discount-bg
-            ul.discount-list
-              li.discount-list__item
-                img.discount-list__img(src="img/discount.png", alt="img")
-                p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
+          ul.discount-list
+            li.discount-list__item
+              img.discount-list__img(src="img/discount.png", alt="img")
+              p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
               //- li.discount-list__item
               //-   img.discount-list__img(src="img/discount.png", alt="img")
               //-   p.discount-list__text GET UP TO 20% DISCOUNT IF YOU REGISTER NOW
@@ -48,9 +46,6 @@ html
           .techno-content
             .techno-top
               h2.title.techno-top__title OUR TECHNOLOGIES
-              button.btn-arrow.techno-top__btn
-                svg.techno-top__svg(width="125" height="125")
-                 use(href="img/icons/icons.svg#techno-arrow")
             ul.techno-list
               li.techno-list__item.current-line
                 label.techno-list__label(for="radio1")
@@ -96,9 +91,8 @@ html
                     p.techno-bottom-list__text Scale Advanced Annotations
                 button.btn.techno-bottom-list__btn
                   span.techno-bottom-list__span LEARN MORE
-                  span.techno-bottom-list__svg
-                    svg(width="32" height="32")
-                      use(href="img/icons/icons.svg#techno-arrow")
+                  svg.techno-bottom-list__svg(width="32" height="32")
+                    use(href="img/icons/icons.svg#techno-arrow")
               img.techno-bottom__img(src="img/techno-circle.png", alt="img")
             .techno-bottom
               .techno-bottom__left

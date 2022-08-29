@@ -1,5 +1,10 @@
 .hero {
-  padding-bottom: 258px;
+  padding-bottom: 340px;
+  padding-top: 213px;
+
+  @include desktop-min {
+    padding-bottom: 180px;
+  }
 
   @include tablet {
     padding-bottom: 180px;
@@ -7,6 +12,7 @@
 
   @include mobile {
     padding-bottom: 100px;
+    padding-top: 113px;
   }
 
   &__title {
@@ -49,7 +55,6 @@
 
 .hero-content {
   position: relative;
-
   @include tablet {
     display: none;
   }
@@ -60,36 +65,15 @@
 
   &__img {
     position: absolute;
+    left: -65px;
+    top: 114px;
+    max-width: 1190px;
 
-    &--center {
-      width: 459px;
-      right: 470px;
-      top: 150px;
-
-      @include desktop-min {
-        z-index: -1;
-        opacity: 0.2;
-      }
-    }
-
-    &--left {
-      width: 1190px;
-      top: 150px;
-      right: 220px;
-      z-index: -1;
-    }
-
-    &--left-light {
-      width: 751px;
-      top: 150px;
-      right: 220px;
-      z-index: -1;
+    @include desktop-min {
+      z-index: 1;
+      opacity: 0.2;
     }
   }
-}
-
-.hero-top {
-  padding-top: 114px;
 }
 
 .hero-bottom {
@@ -223,6 +207,10 @@
   &__btn {
     position: relative;
     display: block;
+
+    @include desktop-min {
+      z-index: 1;
+    }
 
     &--start {
       margin-bottom: 36px;

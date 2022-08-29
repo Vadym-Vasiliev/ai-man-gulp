@@ -4,7 +4,7 @@
 
 .footer-content {
   display: flex;
-  gap: 130px;
+  gap: 73px;
 
   @include desktop-min {
     flex-direction: column;
@@ -35,6 +35,7 @@
     font-size: 20px;
     line-height: 2;
     letter-spacing: -0.03em;
+    max-width: 329px;
 
     color: $white-opacity;
   }

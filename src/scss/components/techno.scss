@@ -7,8 +7,7 @@
 }
 
 .techno-top {
-  display: flex;
-  align-items: center;
+  position: relative;
   margin-bottom: 67px;
 
   @include tablet {
@@ -23,24 +22,20 @@
   }
 
   &__title {
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: -14px;
+      display: block;
+      width: 125px;
+      height: 125px;
+      background-image: url(../img/techno-arrow.png);
+    }
+
     @include mobile {
       font-size: 40px;
       text-align: center;
-    }
-  }
-
-  &__btn {
-    width: 125px;
-    height: 125px;
-
-    margin-left: auto;
-
-    @include tablet {
-      margin: 0 auto;
-    }
-
-    @include mobile {
-      margin: 0 auto;
     }
   }
 }
