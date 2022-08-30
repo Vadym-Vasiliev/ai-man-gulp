@@ -7,12 +7,12 @@ closeModalBtn.addEventListener("click", closeModal);
 
 function windowModalRemoveEventListener() {
   window.removeEventListener("keydown", closeModalEscape);
-  modal.removeEventListener("click", closeModalClickBackdrop);
+  modal.removeEventListener("click", closeModalCLickBackdrop);
 }
 
 function openModal() {
   window.addEventListener("keydown", closeModalEscape);
-  modal.addEventListener("click", closeModalClickBackdrop);
+  modal.addEventListener("click", closeModalCLickBackdrop);
   toggleModal();
 }
 
@@ -22,8 +22,8 @@ function closeModal() {
 }
 
 function toggleModal() {
-  modal.classList.toggle("backdrop__is-hidden");
   document.body.classList.toggle("modal-open");
+  modal.classList.toggle("backdrop__is-hidden");
 }
 
 function closeModalEscape(e) {
@@ -33,7 +33,7 @@ function closeModalEscape(e) {
   }
 }
 
-function closeModalClickBackdrop(e) {
+function closeModalCLickBackdrop(e) {
   if (e.target === e.currentTarget) {
     toggleModal();
     windowModalRemoveEventListener();
